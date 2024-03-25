@@ -1,0 +1,84 @@
+/* === start of variable === */
+$text-primary: white;
+$border-primary: rgba(255, 255, 255, 0.2);
+/* === end of variable === */
+/* === start of section === */
+.bg-night {
+    background-image: url(../../Source/Image/img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.login {
+    & {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: $text-primary;
+        position: relative;
+    }
+
+    .text-black {
+        color: black;
+    }
+
+    .box {
+        background: transparent;
+        backdrop-filter: blur(1rem);
+        border: 2px solid $border-primary;
+    }
+
+    .input-group {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-group input {
+        color: $text-primary;
+        background-color: transparent;
+        padding: 0.5rem;
+        border: 1px solid $border-primary;
+    }
+
+    .input-group input:focus {
+        border: 2px solid $border-primary;
+        outline: none;
+        margin: -1px;
+    }
+
+    .input-group:hover i {
+        transition: 0.5s;
+        transform: scale(120%);
+    }
+
+    ::placeholder {
+        opacity: 1;
+        color: $text-primary;
+    }
+
+    a {
+        color: $text-primary;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    i {
+        transition: 0.5s;
+        position: absolute;
+        right: 2rem;
+        margin-top: 0.75rem;
+    }
+}
+
+
+/* === end of section === */
+/* === start of function === */
+
+/* === end of function === */
